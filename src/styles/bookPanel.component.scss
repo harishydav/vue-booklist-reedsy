@@ -1,0 +1,61 @@
+$titleColor: #a97721;
+$backgroundColor: #fafaf3;
+#card {
+  display: flex;
+  padding: 4%;
+}
+
+.body {
+  flex: 3;
+  text-align: left;
+  padding-right: 4%;
+}
+.image {
+  flex: 1;
+  text-align: center;
+  background: white;
+}
+#strip {
+  width: 60%;
+  display: inline-block;
+  background: $backgroundColor;
+}
+img {
+  border-radius: 10px;
+}
+h2 {
+  display: inline;
+  color: $titleColor;
+}
+.rating {
+  display: inline;
+  margin-left: 5px;
+}
+
+.upvoteLine {
+  display: inline;
+}
+
+button {
+  border-radius: 6px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.unclickedButton button {
+  display: inline;
+  color: #ddaa43;
+  background: white;
+  border-color: #ddaa43;
+}
+.clickedButton button {
+  display: inline;
+  background: #ddaa43;
+  color: white;
+  border-color: #ddaa43;
+}
+.author {
+  font-style: italic;
+}
+img:not(.md-image) {
+  height: 200px;
+}

@@ -1,28 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <BookList />
+    <!-- {{books}} -->
+    <!-- <Book /> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BookList from "./components/BookList";
+import Book from "./components/Book";
+
+import axios from "axios";
 
 export default {
-  name: 'app',
+  name: "App",
   components: {
-    HelloWorld
+    BookList,
+    Book
   }
-}
+};
 </script>
 
 <style>
+body {
+  background: #fafaf3;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  font-family: Roboto;
+  /* margin-top: 60px; */
+}
+
+button {
+  background: #009435;
+  border: 1px solid #009435;
+}
+
+.small-container {
+  max-width: 680px;
 }
 </style>
